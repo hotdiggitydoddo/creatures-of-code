@@ -1,0 +1,91 @@
+﻿.navbar {
+    background-color: rgba(18, 14, 56, 0.84);
+    border-bottom: 3px solid;
+    border-bottom-color: #524D8A;
+    color: white;
+   
+}
+
+.navbar-nav > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+    .navbar-nav > li > a:hover {
+        text-decoration: underline;
+    }
+
+.navbar {
+    min-height: 32px;
+    color: white;
+}
+
+.navbar-collapse {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.navbar > a {
+    color: white;
+}
+
+#loginName, #loginPassword {
+    height: 24px;
+}
+
+
+
+.form-signin {
+    max-width: 40%;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    margin-top: 20px;
+    background-color: #9E9CB5;
+    border: 1px solid;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    
+}
+
+.post {
+    max-width: 70%;
+    background-color: #273857;
+    border:2px solid;border-color:#92919C;border-radius:10px;padding:5px;
+    margin-bottom: 20px;
+    background-image:url('./images/stripedark.png');
+    background-repeat:repeat;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Corbel, 'Century Gothic', 'Tw Cen MT', Futura, "URW Gothic L", Arial, sans-serif;
+    color: white;
+}
+
+.big-frame {
+    max-width: 70%;
+    padding: 100px 19px 29px 29px;
+    margin: 0 auto 20px;
+    margin-top: 20px;
+    color: #5B8AE3;
+    background-color: #273857;
+    border: 1px solid;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+body {
+    padding-top: 100px;
+    background-image:url('./images/creature.png');
+    background-repeat:repeat;
+    font-family: Corbel, 'Century Gothic', 'Tw Cen MT', Futura, "URW Gothic L", Arial, sans-serif;
+}

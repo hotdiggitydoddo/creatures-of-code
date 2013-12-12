@@ -1,0 +1,20 @@
+﻿@model IEnumerable<JotAThought.Model.Post>
+
+<div class="container">
+    
+        @foreach (var post in Model)
+        {
+            <div class="post">
+                <h3 style="color:lightblue">@post.Title</h3>
+                <h5 style="color:lightblue">Posted by @post.Author on @post.CreatedOn.ToLongDateString() at @post.CreatedOn.ToShortTimeString()</h5>
+                <p style="color:white">@Html.Raw(@post.Content.Replace("\n", "<br />"))</p>
+                @if (Request.IsAuthenticated && @WebSecurity.CurrentUserName == post.Author)
+                {
+                    <a href="/posts/edit?id=@post.ID">edit</a>
+                    <a href="/posts/delete?id=@post.ID">delete</a>
+                }
+            </div>
+        }
+    
+</div>
+

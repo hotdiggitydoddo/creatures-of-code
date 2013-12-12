@@ -1,0 +1,47 @@
+﻿<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="color:#AAF0AD">-_- Creatures.of.Code ^_^</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#" style="color: white">About</a></li>
+                <li><a href="#" style="color: white">Contact</a></li>
+            </ul>
+
+            @if (Request.IsAuthenticated)
+            {
+                <div class="navbar-right">
+                    <span>Welcome, @WebSecurity.CurrentUserName!   </span><button id="composePostButton" class="btn btn-xs btn-success">Compose</button>
+                    <button id="logoutButton" class="btn btn-xs btn-default">Logout</button>
+                </div>
+            }
+            else
+            {
+                <div class="navbar-right">
+                    <span><button id ="loginButton" class="btn btn-xs btn-info">Login</button>     or     <button id ="registerButton" class="btn btn-xs btn-warning">Register</button></span>
+                </div>
+            }
+        </div><!-- /.nav-collapse -->
+    </div><!-- /.container -->
+</div><!-- /.navbar -->
+
+<script type="text/javascript">
+    $("#loginButton").click(function () {
+        window.location = '/users/login';
+    });
+    $("#logoutButton").click(function () {
+        window.location = '/users/logout';
+    });
+    $("#composePostButton").click(function() {
+        window.location = '/posts/create';
+    });
+    $("#registerButton").click(function () {
+        window.location = '/users/register';
+    });
+</script>

@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Creatures of Code</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+       @Scripts.Render("~/js")
+    @Styles.Render("~/content/css")
+  </head>
+  <body>
+    @Html.Partial("_Header")
+    @RenderBody()   
+   
+    @RenderSection("Scripts", required: false)
+  </body>
+</html>
