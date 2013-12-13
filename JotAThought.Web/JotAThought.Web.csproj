@@ -180,7 +180,6 @@
     <None Include="Properties\PublishProfiles\jotathought - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\jotathought - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\mywindowshosting.pubxml" />
-    <Content Include="JotAThought.publish.xml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
