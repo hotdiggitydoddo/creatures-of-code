@@ -38,7 +38,7 @@ namespace JotAThought.Web.Controllers
                 if (model.UpdateMe)
                     _service.EditPost(new Post { Author = model.Author, Title = model.Title, Content = model.Content });
                 else
-                    _service.CreatePost(new Post { Author = model.Author, Title = model.Title, Content = model.Content, CreatedOn = DateTime.Now });
+                    _service.CreatePost(new Post { Author = model.Author, Title = model.Title, Content = model.Content, CreatedOn = DateTime.UtcNow.AddHours(-8.0f) });
                 return RedirectToAction("Index");
             }
 
